@@ -1,0 +1,53 @@
+
+GET        http://localhost:9999/api/song?artists=638281d8e3d624bacbd617fc
+###
+
+GET        http://localhost:9999/api/song?artists=63735b7c82239d11013eb1c0&artists=63735b8b82239d11013eb1c2
+###
+
+GET        http://localhost:9999/api/song/csv
+Content-Type: application/json
+
+{ 
+    "songName": "Enemy", 
+    "artists": ["637375891bb096a07800bca5"], 
+    "genres": ["6373809972abd1e5e7c57bb3"], 
+    "songThumbnail": "assets/images/Song3.png", 
+    "songLink": "Enemy - Imagine Dragons.mp3"
+}
+
+###
+       
+GET   http://localhost:9999/api/artist/
+Content-Type: application/json
+
+{
+    "artistName": "Lương Hùng",
+    "artistThumbnail": "assets/images/Singer1.png"
+}
+
+###
+
+GET    http://localhost:9999/api/genre
+Content-Type: application/json
+
+{
+    "genreName": "Nhạc Hàn"
+}
+
+###
+GET        http://localhost:9999/api/song/csv
+
+###
+GET http://localhost:9999/api/song/rec-all?songLink=Bước Qua Mùa Cô Đơn-1669639325521.m4a&top=5
+
+
+
+###
+GET http://localhost:9999/api/user/csv
+Content-Type: "application/json"
+accessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiNjNhZGE1MjMxYWNiMWU1YzE4OWFmMWI2Iiwicm9sZSI6MSwiaWF0IjoxNjcyMzI0MzkyfQ.0_sedBBbiWXmbwEr3tR_-HoKg0AKivAkbgZQ2U30XSU"
+
+
+###
+GET http://localhost:8000/api/rec-user?user=63ada5231acb1e5c189af1b6&top=10
