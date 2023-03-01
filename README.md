@@ -5,6 +5,7 @@
 - npm start: run website
 # Technologies Used
 - ReactJS
+- ExpressJS
 - Mongodb
 # Preview
 ![image](https://user-images.githubusercontent.com/72084491/222117630-9f01681b-7bd1-459f-87c8-5d027d77e664.png)
