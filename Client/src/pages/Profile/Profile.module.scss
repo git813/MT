@@ -1,0 +1,107 @@
+.wrapper {
+    position: relative;
+    padding: 0 40px;
+    color: var(--white-color);
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: var(--white-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        padding: 12px 0 30px 24px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px 20px;
+
+        .info {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(61, 61, 61);
+            padding: 20px;
+            border-radius: 8px;
+            gap: 20px;
+
+            .img-label {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                flex-direction: column;
+                gap: 4px;
+                font-size: 1.2rem;
+                img {
+                    border-radius: 50%;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            .change-info {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .change-password {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(61, 61, 61);
+            padding: 20px;
+            border-radius: 8px;
+            height: 330px;
+
+            .header-field {
+                margin: 0 auto;
+            }
+        }
+
+        .div-input {
+            width: 450px;
+            display: flex;
+            label {
+                width: 50%;
+                font-size: 1.2rem;
+            }
+
+            input {
+                width: 50%;
+                border: none;
+                outline: none;
+                border-radius: 100px;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 8px 16px;
+                transition: background 0.5s;
+                font-size: 1.2rem;
+            }
+
+            input:focus {
+                background: white;
+            }
+        }
+
+        .btn-submit {
+            font-size: 1.2rem;
+            margin-left: auto;
+            margin-top: 12px;
+            padding: 4px 8px;
+            border-radius: 8px;
+            background-color: hsl(119, 69%, 40%);
+            color: var(--white-color);
+            cursor: pointer;
+            gap: 0;
+        }
+
+        .btn-submit:hover {
+            background-color: hsl(119, 69%, 49%);
+        }
+    }
+}

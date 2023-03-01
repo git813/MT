@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 12px;
+        background-color: #1e1e1e;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+
+    .page:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .current-page {
+        background-color: var(--primary-color);
+    }
+}

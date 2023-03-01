@@ -1,0 +1,100 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+
+    .image {
+        position: relative;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 4px;
+            object-fit: cover;
+            border: 1px solid var(--border-image);
+        }
+
+        .song-option {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 200px;
+            top: 0;
+            left: 0;
+            div {
+                position: relative;
+                svg {
+                    display: none;
+                    font-size: 1.8rem;
+                    color: var(--white-color);
+                    padding: 4px;
+                    border-radius: 50%;
+                }
+
+                :hover {
+                    background-color: hsla(0, 0%, 78%, 0.2);
+                    color: var(--primary-color);
+                }
+            }
+
+            .big-option {
+                svg {
+                    font-size: 4rem;
+                }
+                :hover {
+                    background-color: transparent;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .image:hover {
+        .song-option {
+            background-color: hsla(0, 0%, 11%, 0.34);
+        }
+        cursor: pointer;
+
+        div {
+            svg {
+                display: block;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white-color);
+        padding-top: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .name:hover {
+        cursor: default;
+    }
+
+    .artist {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--gray-color);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        a {
+            color: var(--gray-color);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+    }
+}

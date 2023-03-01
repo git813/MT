@@ -1,0 +1,123 @@
+.wrapper {
+    position: relative;
+    padding: 0 40px;
+    width: 100%;
+    color: var(--white-color);
+
+    .banner-singer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 30px;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-weight: 600;
+            padding-top: 12px;
+        }
+    }
+
+    .header-text {
+        font-size: 2rem;
+        padding-bottom: 8px;
+    }
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        padding-left: 20px;
+        color: var(--white-color);
+        text-decoration: none;
+    }
+
+    .nosong-text {
+        padding-left: 20px;
+        color: var(--gray-color);
+        font-size: 1.2rem;
+    }
+
+    .content {
+        padding: 12px 0 30px 24px;
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        column-gap: 24px;
+        row-gap: 24px;
+        width: 100%;
+
+        .medium-banner {
+            display: flex;
+            flex-direction: column;
+
+            .image {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 4px;
+                    object-fit: cover;
+                    border: 1px solid var(--border-image);
+                }
+
+                svg {
+                    display: none;
+                    position: absolute;
+                    font-size: 4rem;
+                    left: 68px;
+                    top: 68px;
+                }
+            }
+
+            .image:hover {
+                opacity: 0.7;
+                cursor: pointer;
+
+                svg {
+                    display: block;
+                }
+            }
+
+            .name {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--white-color);
+                padding-top: 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .name:hover {
+                cursor: default;
+            }
+
+            .artist {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--gray-color);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                a {
+                    color: var(--gray-color);
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}

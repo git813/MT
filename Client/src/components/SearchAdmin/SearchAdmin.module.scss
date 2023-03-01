@@ -1,0 +1,47 @@
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        background-color: var(--white-color);
+        border-radius: 20px;
+        padding: 4px 12px;
+        margin: 0 auto;
+
+        input {
+            background-color: transparent;
+            border-radius: 20px;
+            padding: 0 10px;
+            border: 0;
+            width: 95%;
+            outline: transparent;
+            font-size: 1.2rem;
+        }
+
+        svg {
+            color: black;
+        }
+
+        .loading {
+            width: 20px;
+            animation: spinner linear 2s infinite;
+        }
+
+        @keyframes spinner {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

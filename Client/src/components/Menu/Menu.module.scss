@@ -1,0 +1,69 @@
+.menu-options {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #444444;
+    position: fixed;
+    z-index: 9999;
+    width: 320px;
+    border-radius: 8px;
+    padding: 24px 0;
+    font-size: 1.1rem;
+    color: #efefef;
+    outline: none;
+    user-select: none;
+
+    .option {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 38px;
+        padding: 8px 16px;
+        cursor: pointer;
+        position: relative;
+
+        svg {
+            height: 100%;
+        }
+
+        .btn-open-playlist-menu {
+            margin-left: auto;
+            align-self: flex-end;
+        }
+
+        .playlist-menu {
+            display: none;
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            padding: 24px 0;
+            right: -250px;
+            background-color: #444444;
+            z-index: 10000;
+            border-radius: 8px;
+            animation: 0.5s fadeIn;
+            animation-fill-mode: forwards;
+
+            .playlist-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 8px 16px;
+            }
+
+            .playlist-item:hover {
+                background-color: #7b7b7b;
+            }
+        }
+    }
+
+    .option:hover {
+        background-color: #7b7b7b;
+    }
+
+    .add-to-playlist:hover {
+        .playlist-menu {
+            display: block;
+        }
+    }
+}

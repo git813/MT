@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,100;1,300&family=Signika:wght@300;400;500;600&display=swap");
+
+:root {
+    // --primary-color: #6928CC;
+    --primary-color: #22b052;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-color: #808080;
+    --musicplayer-color: #1c1c1c;
+    --search-color: hsl(0, 0%, 20%);
+    --pading-header: 20px;
+    --toastify-toast-min-height: 52px !important;
+    --toastify-toast-max-height: 52px !important;
+    --toastify-z-index: 99999 !important;
+    --border-image: rgb(152, 152, 152);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-family: "Signika", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+}
+
+.Toastify__close-button {
+    align-self: center;
+}
+
+.Toastify__toast {
+    margin-bottom: 8px !important;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    40% {
+        transform: translateX(-5px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    80% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}

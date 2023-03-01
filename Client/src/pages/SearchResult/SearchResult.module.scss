@@ -1,0 +1,184 @@
+.wrapper {
+    position: relative;
+    padding: 0 40px;
+    color: var(--white-color);
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        padding-left: 20px;
+        color: var(--white-color);
+        text-decoration: none;
+    }
+
+    .content {
+        .tab {
+            display: flex;
+            gap: 20px;
+            padding: 10px 10px;
+
+            .header-text {
+                font-size: 1.6rem;
+                font-weight: 600;
+                padding-right: 20px;
+                border-right: solid 1px var(--gray-color);
+            }
+
+            div:not(.header-text) {
+                color: var(--gray-color);
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+
+            .tab-opened {
+                border-bottom: 1px solid var(--primary-color);
+                color: var(--white-color) !important;
+            }
+
+            div:not(.tab-opened):hover {
+                color: var(--white-color) !important;
+            }
+        }
+
+        .result {
+            display: flex;
+            flex-direction: column;
+
+            .song-result {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                .image {
+                    position: relative;
+                    display: flex;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 4px;
+                        object-fit: cover;
+                        border: 1px solid var(--border-image);
+                    }
+
+                    svg {
+                        display: none;
+                        position: absolute;
+                        font-size: 1.4rem;
+                        left: 22px;
+                        top: 20px;
+                        color: var(--white-color);
+                    }
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding-left: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: var(--white-color);
+
+                    .name {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: var(--white-color);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .name:hover {
+                        cursor: default;
+                    }
+
+                    .artist {
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                        color: var(--gray-color);
+
+                        a {
+                            color: var(--gray-color);
+                            text-decoration: none;
+                            font-size: 0.8rem;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    .time-release {
+                        font-size: 0.6rem;
+                        font-weight: 400;
+                        color: var(--gray-color);
+                    }
+                }
+            }
+
+            .song-result:hover {
+                background-color: #1e1e1e;
+                border-radius: 8px;
+
+                .image {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+
+                svg {
+                    display: block;
+                }
+            }
+
+            .artist-result {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 20px;
+                text-decoration: none;
+                width: 20%;
+
+                img {
+                    align-self: center;
+                    width: 100%;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .name {
+                    padding-top: 8px;
+                    text-align: center;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: var(--white-color);
+                }
+            }
+
+            .artist-result:hover {
+                .name {
+                    color: var(--primary-color);
+                }
+            }
+
+            .action {
+                margin-left: auto;
+                margin-right: 12px;
+                svg {
+                    display: none;
+                    border-radius: 50%;
+                    padding: 4px;
+                    font-size: 1.8rem;
+                }
+
+                svg:hover {
+                    cursor: pointer;
+                    background-color: hsla(0, 0%, 78%, 0.525);
+                }
+            }
+        }
+    }
+}
